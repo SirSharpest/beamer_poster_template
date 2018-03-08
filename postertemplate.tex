@@ -16,7 +16,7 @@
 \begin{document}
 \begin{frame}{} 
 
-  \begin{textblock}{27.7}(1,6)
+  \begin{textblock}{28}(1,5.5)
 
     \begin{block}{Introduction}
 
@@ -44,10 +44,9 @@
       analysis. The primary ones can be seen in the figure \ref{fig:real}
 
       \begin{multicols}{2}
-
         \begin{figure}[htb]
           \centering
-          \includegraphics[width=8cm]{collection2.png}
+          \includegraphics[width=7.3cm]{collection2.png}
           \caption{\label{fig:real} wheat grains labelled with data}
         \end{figure}
 
@@ -55,7 +54,7 @@
 
         \begin{figure}[htb]
           \centering
-          \includegraphics[width=11.5cm]{collection.png}
+          \includegraphics[width=10.5cm]{collection.png}
           \caption{\label{fig:3d} wheat Spikes original (left) and scanned (right)}
         \end{figure}        
         
@@ -63,28 +62,45 @@
       
     \end{block}
 
-    \begin{block}{Software Development}
-      In order to make this work reproducible, as I believe it will justify many further studies
-      I am creating a software library which acts as a specialist pipeline for handling the type of data
-      which CT-Scanners produce.
+    \begin{block}{Software Development and Pipeline}
+      \begin{multicols}{2}
+        
+      To make this research reproducible, for use in follow-up and future experiment analysis,
+      I am creating a software library which acts as a specialist pipeline for handling CT-Scanner
+      image data.
+
+      \vspace{0.5cm}
+
+      Figure:\ref{fig:flow} Illustrates a typical pipeline in which data will flow in this system.
+      Primarily the process aims at taking raw uninteresting data and producing meaningful and useful
+      output.
+
+      \vspace{0.5cm}
+
+      The pipeline will also allow a researcher to specify if they are interested in cleaning the data
+      or if the outliers are of particular interest, additional options for joining in other external
+      experiment information will also be possible in the final design, as flexibility is key.
+      
+        \columnbreak
+
         \begin{figure}[htb]
           \centering
-          \includegraphics[width=23cm]{mvc.png}
-          \caption{\label{fig:mvc} Software Model used following MVC Design}
+          \includegraphics[width=13.5cm, height=20cm]{flow.png}
+          \caption{\label{fig:flow} Data Processing Software Pipeline }
         \end{figure}        
+        
+      \end{multicols}
+
+
+
+
     \end{block}
 
     \begin{block}{Future Work}
-
-      My main aims for the future is to fully implement the proposed statistical library,
+      My main aim for the future is to fully implement the proposed statistical library,
       once completed I can focus on testing my outlined hypothesis.
       I will also be aiming to make use of the \textit{scipy}
-      data models packages in Python in order to better model the data and to search for more vital
-      underlying meanings in the data I've created.
-
-      Hypothesis testing will act as an ideal test for this software and it's ability to be used
-      for scientific research as a software tool.
-
+      data models packages in Python.
     \end{block}
 
     
@@ -101,7 +117,7 @@
 
   \end{textblock}
 
-  \begin{textblock}{27.7}(30.5,6)
+  \begin{textblock}{28}(30.5,5.5)
 
     \begin{block}{Research Aims}
       Primarily I have three main null-hypothesis which I hope this project will be able to reject:
@@ -131,9 +147,7 @@
         \item perform data cleaning
         \item automatically generates plots
         \end{itemize}
-
         \columnbreak
-
         \begin{itemize}
         \item handles data from multiple sources
         \item adding additional experiment parameters
@@ -158,8 +172,8 @@
     \begin{block}{Statistical Methods and Testing}
 
       In order to answer these questions a number of statistical tests will be required,
-      as will numerous elements of data science, all of which will be Incorporated into
-      my analysing software library (Figure:\ref{fig:mvc}). I am planning to use:
+      as will numerous elements of data science, all of which will be incorporated into
+      my analysing software library (Figure:\ref{fig:flow}). I am planning to use:
 
       \begin{multicols}{2}
 
