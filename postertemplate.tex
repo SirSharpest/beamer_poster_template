@@ -14,7 +14,7 @@
 \date{\today}
 
 \begin{document}
-\begin{frame}{} 
+\begin{frame}{}
 
   \begin{textblock}{28}(1,5.5)
 
@@ -22,19 +22,19 @@
 
 
       My Project's goal is to examine the effects of domestication in Wheat through the use of \si\micro\-Computed Tomography.
-      This will be done by using a novel technique for a detailed extraction of 3-dimensional morphometric data of wheat grain \cite{Hughes2017}.
+      This will be done by using a novel technique for a detailed extraction of 3-dimensional morphometric data of wheat grain \cite{hughes2017}.
 
       \vspace{0.5cm}
-      
+
       I have a wide range or primitive, non-domesticated wheat varieties
       as well as their cultivated relatives. These genotypes also provide a nice gradient of genome shape and size (Ploidy)
       which could also provide great insight into how genome structure effects grains.
 
       \vspace{0.5cm}
-      
+
       I aim to modify, improve and use the outlined method to extract data from these wheat varieties to create a unique data-set.
       I shall then create statistical analysis software which can reliably, produce answers to hypothesis aimed at these data.
-      
+
     \end{block}
 
 
@@ -56,15 +56,15 @@
           \centering
           \includegraphics[width=10.5cm]{collection.png}
           \caption{\label{fig:3d} wheat Spikes original (left) and scanned (right)}
-        \end{figure}        
-        
+        \end{figure}
+
       \end{multicols}
-      
+
     \end{block}
 
     \begin{block}{Software Development and Pipeline}
       \begin{multicols}{2}
-        
+
       To make this research reproducible, for use in follow-up and future experiment analysis,
       I am creating a software library which acts as a specialist pipeline for handling CT-Scanner
       image data.
@@ -80,15 +80,15 @@
       The pipeline will also allow a researcher to specify if they are interested in cleaning the data
       or if the outliers are of particular interest, additional options for joining in other external
       experiment information will also be possible in the final design, as flexibility is key.
-      
+
         \columnbreak
 
         \begin{figure}[htb]
           \centering
           \includegraphics[width=13.5cm, height=20cm]{flow.png}
           \caption{\label{fig:flow} Data Processing Software Pipeline }
-        \end{figure}        
-        
+        \end{figure}
+
       \end{multicols}
 
 
@@ -103,15 +103,15 @@
       data models packages in Python.
     \end{block}
 
-    
+
     \begin{block}{Further Information}
       For more information on this project I recommend keeping up-to-date with my development blog
       which can be found at  http://www.users.aber.ac.uk/nah26
 
       Also with Dr. Hugo Oliveira's work which can be found on Google scholar
       provides a great deal of insight into the primitive species
-      and their phylogeny \cite{Oliveira2012}. 
-      
+      and their phylogeny.
+
     \end{block}
 
 
@@ -127,10 +127,10 @@
       \item{$H_0=$ Ploidy has no effect on the morphometric properties of wheat}
       \item{$H_0=$ There is no difference in hulled and non-hulled genotypes}
       \end{itemize}
-      
+
     \end{block}
 
-    
+
     \begin{block}{Current Progress}
 
       My work to date has been primarily focused on modifying
@@ -141,7 +141,7 @@
 
       Additionally I have been building a data processing library whichs aims to:
       \begin{multicols}{2}
-        
+
         \begin{itemize}
         \item simplify data input
         \item perform data cleaning
@@ -159,16 +159,16 @@
 
       Figure \ref{fig:initalboxplots} shows one example of the auto analysis which my library
       can perform in its early stages of development.
-      
+
       \begin{figure}[htb]
         \centering
         \includegraphics[width=22cm]{domesticated.png}
         \caption{\label{fig:initalboxplots}Initial Data analysis of Domestication and Ploidy}
       \end{figure}
-      
+
     \end{block}
 
-    
+
     \begin{block}{Statistical Methods and Testing}
 
       In order to answer these questions a number of statistical tests will be required,
@@ -200,11 +200,11 @@
           \centering
           \includegraphics[width=22cm]{qqplots.png}
           \caption{\label{fig:qq} QQ-Plots showing Distribution}
-        \end{figure}       
-      
+        \end{figure}
+
     \end{block}
-    
-    
+
+
     \begin{block}{Acknowledgements and Thanks}
       Thank you for the vital help and support from the following people and organisations.
 
@@ -225,12 +225,12 @@
         \end{itemize}
 
         \columnbreak
-        
+
         \begin{itemize}
         \item{BBSRC}
         \item{Dr. Kevin Williams}
         \end{itemize}
-        
+
       \end{multicols}
 
     \end{block}
@@ -240,8 +240,13 @@
       \bibliographystyle{unsrt}
     \end{block}
 
-    
+
   \end{textblock}
 
 \end{frame}
 \end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
