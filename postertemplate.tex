@@ -8,9 +8,12 @@
 \setlength{\TPHorizModule}{1cm}
 \setlength{\TPVertModule}{1cm}
 
-\title{Modelling the effects of domestication in Wheat through novel computer-vision techniques}
-\author{Nathan Hughes (nah26@aber.ac.uk)}
-\footer{More information at \texttt{http://www.users.aber.ac.uk/nah26}}
+\title{ Computational modelling of cell-cell transport via plasmodesmata }
+\author{Nathan Hughes (hughesn@nbi.ac.uk)}
+\footer{
+  Email: \url{hughesn@nbi.ac.uk} |
+  Twitter:
+  \url{NathanHughes__}}
 \date{\today}
 
 \begin{document}
@@ -21,27 +24,11 @@
     \begin{block}{Introduction}
 
 
-      My Project's goal is to examine the effects of domestication in Wheat through the use of \si\micro\-Computed Tomography.
-      This will be done by using a novel technique for a detailed extraction of 3-dimensional morphometric data of wheat grain \cite{hughes2017}.
-
-      \vspace{0.5cm}
-
-      I have a wide range or primitive, non-domesticated wheat varieties
-      as well as their cultivated relatives. These genotypes also provide a nice gradient of genome shape and size (Ploidy)
-      which could also provide great insight into how genome structure effects grains.
-
-      \vspace{0.5cm}
-
-      I aim to modify, improve and use the outlined method to extract data from these wheat varieties to create a unique data-set.
-      I shall then create statistical analysis software which can reliably, produce answers to hypothesis aimed at these data.
 
     \end{block}
 
 
-    \begin{block}{Grain Parameters}
-
-      The technique being used to produce these data provides a number of attributes for me to use in
-      analysis. The primary ones can be seen in the figure \ref{fig:real}
+    \begin{block}{Results}
 
       \begin{multicols}{2}
         \begin{figure}[htb]
@@ -62,7 +49,7 @@
 
     \end{block}
 
-    \begin{block}{Software Development and Pipeline}
+    \begin{block}{Results 2}
       \begin{multicols}{2}
 
       To make this research reproducible, for use in follow-up and future experiment analysis,
@@ -96,7 +83,7 @@
 
     \end{block}
 
-    \begin{block}{Future Work}
+    \begin{block}{Results 3 }
       My main aim for the future is to fully implement the proposed statistical library,
       once completed I can focus on testing my outlined hypothesis.
       I will also be aiming to make use of the \textit{scipy}
@@ -104,105 +91,20 @@
     \end{block}
 
 
-    \begin{block}{Further Information}
-      For more information on this project I recommend keeping up-to-date with my development blog
-      which can be found at  http://www.users.aber.ac.uk/nah26
-
-      Also with Dr. Hugo Oliveira's work which can be found on Google scholar
-      provides a great deal of insight into the primitive species
-      and their phylogeny.
-
-    \end{block}
-
-
   \end{textblock}
 
   \begin{textblock}{28}(30.5,5.5)
 
-    \begin{block}{Research Aims}
-      Primarily I have three main null-hypothesis which I hope this project will be able to reject:
+    \begin{block}{Methods}
 
-      \begin{itemize}
-      \item{$H_0=$ Domestication has no effect on the morphometric properties of wheat}
-      \item{$H_0=$ Ploidy has no effect on the morphometric properties of wheat}
-      \item{$H_0=$ There is no difference in hulled and non-hulled genotypes}
-      \end{itemize}
 
     \end{block}
 
 
-    \begin{block}{Current Progress}
-
-      My work to date has been primarily focused on modifying
-      and adapting 3D analysis software to fit the required
-      parameters to work with such a varied data source.
-
-      \vspace{0.3cm}
-
-      Additionally I have been building a data processing library whichs aims to:
-      \begin{multicols}{2}
-
-        \begin{itemize}
-        \item simplify data input
-        \item perform data cleaning
-        \item automatically generates plots
-        \end{itemize}
-        \columnbreak
-        \begin{itemize}
-        \item handles data from multiple sources
-        \item adding additional experiment parameters
-        \end{itemize}
-
-      \end{multicols}
-
-      \vspace{0.3cm}
-
-      Figure \ref{fig:initalboxplots} shows one example of the auto analysis which my library
-      can perform in its early stages of development.
-
-      \begin{figure}[htb]
-        \centering
-        \includegraphics[width=22cm]{domesticated.png}
-        \caption{\label{fig:initalboxplots}Initial Data analysis of Domestication and Ploidy}
-      \end{figure}
+    \begin{block}{Future work}
 
     \end{block}
 
-
-    \begin{block}{Statistical Methods and Testing}
-
-      In order to answer these questions a number of statistical tests will be required,
-      as will numerous elements of data science, all of which will be incorporated into
-      my analysing software library (Figure:\ref{fig:flow}). I am planning to use:
-
-      \begin{multicols}{2}
-
-        \begin{itemize}
-        \item ANOVA
-        \item MANOVA
-        \item $\chi^2$ Tests
-        \end{itemize}
-
-        \columnbreak
-
-        \begin{itemize}
-        \item PCA
-        \item GLMs
-        \item T/F-Tests
-        \end{itemize}
-
-      \end{multicols}
-
-      From the data in Figure:\ref{fig:initalboxplots} you can see that the data is
-      messy before processing. I have used QQ-Plots in Figure:\ref{fig:qq} to illustrate
-      the non-parametric nature of the data. This is a problem I hope to solve in the future.
-        \begin{figure}[htb]
-          \centering
-          \includegraphics[width=22cm]{qqplots.png}
-          \caption{\label{fig:qq} QQ-Plots showing Distribution}
-        \end{figure}
-
-    \end{block}
 
 
     \begin{block}{Acknowledgements and Thanks}
@@ -211,16 +113,16 @@
       \begin{multicols}{3}
 
         \begin{itemize}
-        \item{Dr. Wayne Aubrey}
-        \item{Dr. Candida Nibau}
+        \item{Prof. Richard Morris}
+        \item{Dr. Christine Faulkner}
 
         \end{itemize}
 
         \columnbreak
 
         \begin{itemize}
-        \item{Prof. John Doonan}
-        \item{Dr. Hugo Oliveira}
+        \item{Dr. Melissa Tomkins}
+        \item{Morris \& Faulkner Groups}
 
         \end{itemize}
 
@@ -228,7 +130,7 @@
 
         \begin{itemize}
         \item{BBSRC}
-        \item{Dr. Kevin Williams}
+        \item{NRPDTP}
         \end{itemize}
 
       \end{multicols}
